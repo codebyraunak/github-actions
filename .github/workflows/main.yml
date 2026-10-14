@@ -1,8 +1,9 @@
-name: cicd
+name: CI/CD
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   demo:
@@ -11,4 +12,3 @@ jobs:
     steps:
       - name: Greetings
         run: echo "hello world"
-``
