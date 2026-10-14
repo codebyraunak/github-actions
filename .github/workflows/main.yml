@@ -1,13 +1,14 @@
-name: ciocd
+name: cicd
 
 on:
   push:
     branches: [main]
 
-  jobs:
-    demo:
-      runs-on: ubuntu-latest
+jobs:
+  demo:
+    runs-on: ubuntu-latest
 
-  steps:
-  -name: Greetings
-   run: echo "hello world"
+    steps:
+      - name: Greetings
+        run: echo "hello world"
+``
